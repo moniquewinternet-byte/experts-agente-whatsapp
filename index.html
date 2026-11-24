@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agente de WhatsApp</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Doto:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --azul:#0057B8; --laranja:#FF6B2B; --rosa:#FF3E8A;
+    --base:#F4F6F9; --branco:#FFFFFF; --tinta:#14263C; --borda:#e2e7ee;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; min-height:100vh; background:var(--base); color:var(--tinta);
+    font-family:'Inter',system-ui,sans-serif; line-height:1.55;
+    display:flex; align-items:center; justify-content:center; padding:24px;
+  }
+  .janela{
+    width:100%; max-width:600px; background:var(--branco);
+    border:1px solid var(--borda); border-radius:18px;
+    box-shadow:0 18px 50px rgba(20,38,60,.12); overflow:hidden;
+  }
+  .barra{
+    display:flex; align-items:center; gap:8px;
+    padding:14px 18px; border-bottom:1px solid var(--borda);
+  }
+  .bolinha{width:12px; height:12px; border-radius:50%}
+  .b1{background:var(--azul)} .b2{background:var(--laranja)} .b3{background:var(--rosa)}
+  .barra span{margin-left:8px; font-family:'Doto',monospace; font-weight:700;
+    font-size:13px; letter-spacing:.08em; color:#7b8aa0; text-transform:uppercase}
+  .corpo{padding:34px 30px 26px}
+  .etiqueta{
+    font-family:'Doto',monospace; font-weight:700; font-size:14px;
+    letter-spacing:.12em; text-transform:uppercase; color:var(--laranja); margin:0 0 10px;
+  }
+  h1{
+    font-family:'Chakra Petch',sans-serif; font-weight:700;
+    font-size:34px; line-height:1.1; margin:0 0 14px;
+  }
+  .tricolor{display:flex; gap:6px; margin:0 0 20px}
+  .tricolor i{height:5px; width:46px; border-radius:3px}
+  .tricolor i:nth-child(1){background:var(--azul)}
+  .tricolor i:nth-child(2){background:var(--laranja)}
+  .tricolor i:nth-child(3){background:var(--rosa)}
+  p.sub{font-size:18px; margin:0 0 26px; color:#33465c}
+  .btn{
+    display:inline-flex; align-items:center; gap:10px;
+    background:var(--laranja); color:#fff; text-decoration:none;
+    font-weight:600; font-size:18px; padding:16px 28px; border-radius:12px;
+    transition:transform .12s ease, background .12s ease;
+  }
+  .btn:hover{background:#ee5a1c; transform:translateY(-1px)}
+  .arq{font-family:'Doto',monospace; font-size:13px; color:#7b8aa0; margin:12px 0 0;
+    letter-spacing:.04em}
+  .passos{margin:30px 0 0; padding:22px 20px; background:var(--base);
+    border:1px solid var(--borda); border-radius:12px}
+  .passos h2{font-family:'Chakra Petch',sans-serif; font-size:16px; margin:0 0 12px}
+  .passos ol{margin:0; padding-left:20px}
+  .passos li{margin:0 0 7px}
+  .rodape{display:flex; flex-wrap:wrap; justify-content:space-between; gap:6px;
+    padding:16px 30px 22px; border-top:1px solid var(--borda); color:#7b8aa0; font-size:13px}
+  .rodape .arroba{color:var(--azul); font-weight:600}
+  @media (max-width:480px){ h1{font-size:28px} .corpo{padding:26px 22px 20px} }
+</style>
+</head>
+<body>
+  <main class="janela">
+    <div class="barra">
+      <i class="bolinha b1"></i><i class="bolinha b2"></i><i class="bolinha b3"></i>
+      <span>agente de whatsapp</span>
+    </div>
+    <div class="corpo">
+      <p class="etiqueta">Claude para Experts · 24/11</p>
+      <h1>o seu Agente de WhatsApp</h1>
+      <div class="tricolor"><i></i><i></i><i></i></div>
+      <p class="sub">uma equipe que organiza o seu WhatsApp e escreve no seu tom. do jeito da Monique, ou do seu jeito.</p>
+      <a class="btn" href="agente-whatsapp.zip" download>baixar o agente</a>
+      <p class="arq">agente-whatsapp.zip</p>
+      <div class="passos">
+        <h2>como usar</h2>
+        <ol>
+          <li>baixe e descompacte o arquivo.</li>
+          <li>instale o Node.js, versão LTS: <a href="https://nodejs.org" target="_blank" rel="noopener">nodejs.org</a></li>
+          <li>abra a pasta no Claude Code.</li>
+          <li>digite <b>/whatsapp</b>, <b>/organizar</b> ou <b>/responder</b>.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="rodape">
+      <span class="arroba">@moniquetecnologia</span>
+      <span>tecnologia na prática. resultados na vida.</span>
+    </div>
+  </main>
+</body>
+</html>
